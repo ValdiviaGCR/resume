@@ -8,41 +8,52 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom and Modern CSS -->
     <link href="css/custom.css" rel="stylesheet">
+    <style>
+        /* Padding superior para evitar que el contenido quede oculto debajo del navbar fijo */
+        body {
+            padding-top: 60px; /* Ajusta este valor según la altura del navbar */
+        }
+        
+        /* Si prefieres ajustar el margen del contenedor en lugar del padding del body */
+        .container {
+            margin-top: 80px; /* Ajusta este valor según la altura del navbar */
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">Carlos R Valdivia Garcia</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#summary">Summary</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#experience">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#education">Education</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#languages">Languages</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+       <!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Carlos R Valdivia Garcia</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto"> <!-- Usar ms-auto en lugar de ml-auto para alineación en Bootstrap 5 -->
+            <li class="nav-item">
+                <a class="nav-link" href="#summary">Summary</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#languages">Languages</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
     <!-- Header -->
     <header class="text-center py-5" id="home">
         <img src="images/profile.jpg" alt="Profile Picture" class="img-fluid rounded-circle" style="width: 150px;">
         <h1 class="mt-3">Carlos R Valdivia Garcia</h1>
         <p class="lead">IT Professional & Data Analyst</p>
-        <p class="text-muted">McLean, VA | <a href="mailto:valdiviagcr@gmail.com">valdiviagcr@gmail.com</a> | +1 240 756 7811 </p>
+        <p class="text-muted">McLean, VA | <a href="mailto:valdiviagcr@gmail.com">valdiviagcr@gmail.com</a> | +1 240 756 7811 | <a href="https://yourwebsite.com">yourwebsite.com</a></p>
     </header>
 
     <div class="container my-5">
@@ -159,8 +170,7 @@
         <p>&copy; 2024 Carlos R Valdivia Garcia. All rights reserved. | <a href="mailto:valdiviagcr@gmail.com">valdiviagcr@gmail.com</a></p>
     </footer>
 
-    <!-- Bootstrap JS and dependencies (Local) -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+     <!-- Bootstrap JS (Local) -->
+     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
